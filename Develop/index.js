@@ -18,6 +18,16 @@ const questions = [
     },
     {
         type: 'input',
+        name: 'installation',
+        message: 'Please provide installation instructions for your project.'
+    },
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'Please provide usage instructions for your project.'
+    }
+    {
+        type: 'input',
         name: 'title',
         message: 'What is the title of your project?'
     },
