@@ -65,6 +65,7 @@ function generateMarkdown(data) {
   * [License](#license)
   * [Features](#features)
   * [Authors](#authors)
+  * [Github Username](#github)
   
 
   ## Installation
@@ -77,6 +78,9 @@ function generateMarkdown(data) {
   ${data.features}
   ## Authors
   ${data.authors}
+  ## Github Username
+  ${data.github}
+
 
 
 `;

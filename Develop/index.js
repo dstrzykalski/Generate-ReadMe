@@ -4,12 +4,18 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
+const { type } = require('os');
 
 
 // TODO: Create an array of questions for user input
 //This is where the array of questions that will be asked in order to form the readme is created. 
 //It currently takes in title, description, features, authors, and license. Other options could be added as needed.
 const questions = [
+    {
+        type: 'input',
+        name: 'github',
+        message: 'What is your github username?',
+    },
     {
         type: 'input',
         name: 'title',
