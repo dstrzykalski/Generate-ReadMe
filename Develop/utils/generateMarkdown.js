@@ -1,5 +1,6 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
+//This code simply does what is asked about using if else statements.
 function renderLicenseBadge(license) {
   if (license === "MIT") {
     return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
@@ -19,6 +20,8 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
+//This follows the same process as the rendeLicenseBadge function, but this returns the link to the license.
+
 function renderLicenseLink(license) {
   if (license === "MIT") {
     return `[MIT](https://opensource.org/licenses/MIT)`
@@ -38,6 +41,7 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
+//Like the code above, this code renders the license section of the README file using an if else statement.
 function renderLicenseSection(license) {
   if (license) {
     return ` ${license} license.`;
@@ -47,6 +51,9 @@ function renderLicenseSection(license) {
 }
 
 // TODO: Create a function to generate markdown for README
+//This code creates a function pre-titled generateMarkdown. This function forms a template that will be used to form the readme file. The function takes in data as a parameter and returns a string that will be used to form the readme file.
+//the data. method is used to access the inputs for those respective questions asked when creating the readme.
+//The Green Text Represents the header sections and their corresponding links in the table of contents.
 function generateMarkdown(data) {
   return `# ${data.title}
   ${renderLicenseBadge(data.license)}
