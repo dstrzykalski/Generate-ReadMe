@@ -30,6 +30,7 @@ const questions = [
         type: 'input',
         name: 'title',
         message: 'What is the title of your project?'
+
     },
     {
         type: 'input',
